@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "e49eb9f9-5e72-4629-9495-ee8734759831",
+		"name": "testService",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14288223"
+	},
+	"item": [
+		{
+			"name": "consultar autor",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "37c6a972-eb47-4b1d-ab5a-b4b8e8587f02",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:32227/proyecto/api/v1/biblioteca/autores",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "32227",
+					"path": [
+						"proyecto",
+						"api",
+						"v1",
+						"biblioteca",
+						"autores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "crear autor",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "37c6a972-eb47-4b1d-ab5a-b4b8e8587f02",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "   {\r\n        \"nombres\": \"Andrea\",\r\n        \"apellidos\": \"Aguilar\",\r\n        \"telefono\": \"74591004\",\r\n        \"libroDTO\": []\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:32227/proyecto/api/v1/biblioteca/autores",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "32227",
+					"path": [
+						"proyecto",
+						"api",
+						"v1",
+						"biblioteca",
+						"autores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar autor",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "37c6a972-eb47-4b1d-ab5a-b4b8e8587f02",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/v1/biblioteca/autores/8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"biblioteca",
+						"autores",
+						"8"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
