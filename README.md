@@ -69,6 +69,7 @@ kubectl get svc --namespace tomcat-namespace
 <user username="tomcat" password="tomcat" roles="admin-script,admin-gui,manager-script,manager-gui,manager-status" />
 <user username="admin" password="tomcat" roles="admin-script,admin-gui,manager-script,manager-gui,manager-status" />
 ```
+**Importante:** En las ultimas versiones de tomcat los archivos vienen en el fichero webapps.dist y no en webapps, por lo que se debe copiar todo el contenido de webapps.dist a webapp \
 9 - Reiniciar el servidor para aplicar los cambios
 
 ## Despliegue de archivo WAR en Tomcat desde Jenkins
