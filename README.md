@@ -11,7 +11,7 @@ Repositorio de proyecto CRUD spring boot para ser ejecutado en contenedores con 
 2 - Abrir terminal y ubicarse en directorio donde estan los archivos del repositorio \
 3 - Ejecutar comando kubcetl para crear secreto para clave de root de Mysql 
 ```PS
-kubectl create secret generic mysql-root-pass --from-literal=password=SU_CLAVE
+kubectl create secret generic mysql-root-pass --from-literal=password=remliw23
 ```
 4 - Crear secreto para nombre de base de datos 
 ```PS
